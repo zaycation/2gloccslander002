@@ -1,23 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container, Row, Col } from "shards-react";
+
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "shards-ui/dist/css/shards.min.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Container className="container-fluid">
+        <Row>
+          <Col>
+            <div className="header">
+              <br />
+              <div className="header-text">
+                <br />
+                <h4 className="text-center text-white">2glocs</h4>
+
+                <h5 className="text-center text-white">
+                  PS4 Twitch Streamer 🎮
+                </h5>
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container className="container-fluid">
+        <Row>
+          <Col>
+            <h4 className="text-center text-white">2glocs</h4>
+
+            <h5 className="text-center text-white">PS4 Twitch Streamer 🎮</h5>
+          </Col>
+          <Col></Col>
+        </Row>
+      </Container>
+
+      <Container className="container-fluid">
+        <Row>
+          <Col>
+            <div className="header3">
+              <br />
+              <div>
+
+                
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
